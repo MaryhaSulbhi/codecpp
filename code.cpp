@@ -40,7 +40,7 @@
 // {
 //     int age=25;
 //     int marks=45;
-//     cout<<"size of int="<<sizeof(int)<<endl; 
+//     cout<<"size of int="<<sizeof(int)<<endl;        #####sizeof is used to find the size of data type in bytes################
 //     return 0;
 
 // }
@@ -70,7 +70,7 @@
 //     float gpa=3.5;
 //     bool isstudent=true;
 
-//     cout<<age<<" "<<grade<<" "<<gpa<<" "<<isstudent<<" "<<endl;
+//     cout<<age<<" "<<grade<<" "<<gpa<<" "<<isstudent<<" "<<endl; ##########it prints all the values in a single line##########
 //     cout<<"size of int="<<sizeof(int)<<endl;
 //     cout<<"size of char="<<sizeof(char)<<endl;
 //     cout<<"size of float="<<sizeof(float)<<endl;
@@ -82,7 +82,7 @@
 // int main()
 // {
 //     float PI1=3.1459265359;
-//     double PI2=3.1459265359;
+//     double PI2=3.1459265359; ############float and double are used to store decimal values##########
 
 //     cout<<"PI="<<PI1<<endl;
 //     cout<<"PI2="<<PI2<<endl;
@@ -95,7 +95,7 @@
 //   int age=22;
 //   char grade='a';
 //   float PI=3.1459265359;
-//   bool ishello=false;
+//   bool ishello=false;       ##########bool is used to store true or false values##########
 //   double marks=334.7;
 //   cout<<"marks="<<marks;
 //   cout<<"\n"<<ishello;
@@ -103,14 +103,16 @@
 //   cout<<"\nage="<<sizeof(age);
 //   cout<<"\ngrade="<<grade;
 //   int value=grade;
-//   int newMarks=(int)marks;
+//   int newMarks=(int)marks;  ###########type casting is used to convert one data type to another##########
 //   cout<<"\nnewMarks="<<newMarks;
 //   cout<<"\nvalue="<<value;
 //   return 0;
 
 // };
 // ###########################################################
-// taking an input from user
+
+
+// ############# taking an input from user####################
 
 // #include<iostream>
 // using namespace std;
@@ -118,12 +120,14 @@
 // {
 //   int age;
 //   cout<<"enter the age=";
-//   cin>>age;
+//   cin>>age;  #########cin is used to take input from user##########
 //   cout<<"your age is :"<<age;
 //   return 0;
 // }
 // ############################################
-// operators
+
+
+// ###############different types of operators#####################
 // #include<iostream>
 // using namespace std;
 // int main()
@@ -145,6 +149,8 @@
 //   cout<<"\nright shift="<< (a>>b);
 //     return 0; 
 // }
+
+// ############# taking input from user and printing it ######################
 // #include<iostream>
 // using namespace std;
 // int main()
@@ -159,6 +165,11 @@
 //   cout<<"your marks are:"<<marks;
 //   return 0;
 // }
+
+
+
+// ############# ##########   ######## elif statement#############  #############  #################
+
 // ############greater than two numbers#########################
 // #include<iostream>
 // using namespace std;
@@ -193,6 +204,24 @@
 //   }
 //   return 0;
 // }
+
+// ############# leap year or not ####################
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//   int year;
+//   cout<<"enter the year=";
+//   cin>>year;
+//   if(year%4==0 && year%100!=0 || year%400==0){
+//     cout<<"year is leap year";
+//   }else{
+//     cout<<"year is not leap year is not leap year";
+//   }
+//   return 0;
+// }
+
+
 // #############voting eligiblity  ################
 // #include<iostream>
 // using namespace std;
@@ -272,6 +301,7 @@
 //     }
 //       return 0;
 //     }
+
 // ################# lower case and upper case letter ###################
 // #include<iostream>
 // using namespace std;
@@ -298,6 +328,7 @@
 //   }
 //   return 0;
 // }
+
 // #############conditionl operator##########
 // #include<iostream>
 // using namespace std;
@@ -560,16 +591,49 @@
 //   return 0;
 // }
 
-#include<iostream>
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//   int n=5;
+//   int num=1;
+//   for(int i=0;i<n;i++){
+//     for(int j=0;j<i+1;j++){
+//       cout<<num<<" ";
+//       num++;
+//     }
+//     cout<<endl;
+//   }
+//   return 0;
+// }
+
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//   int n=5;
+//   for(int i=0;i<n; i++){
+//     for(int j=1; j<=i+1; j++){
+//       cout<<j<<" ";
+
+//     }
+//     cout<<endl;
+//   }
+//   return 0 ;
+// }
+
+// ###########Reverse/ backward Right Half Triangle ##########
+#include <iostream>
 using namespace std;
 int main()
 {
   int n=5;
-  int num=1;
-  for(int i=0;i<n;i++){
-    for(int j=0;j<i+1;j++){
-      cout<<num<<" ";
-      num++;
+  for(int i=n; i>0; i--){
+   cout<<i<<endl;
+  }
+  for(int i=0;i<n; i++){
+    for(int j=i+1; j>0; j--){
+      cout<<j<<" ";
     }
     cout<<endl;
   }
