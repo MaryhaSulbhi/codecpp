@@ -640,3 +640,201 @@
 //   return 0;
 // }
 
+
+
+// ####################################   Functions    ##############################
+// syntax of function
+// return_type function_name(parameter_list){               #########[ function may or may not contain the parameter list ]#####
+//   // function body;
+//   return value;
+// }
+
+// we can call the function by the function name
+
+// #include<iostream>
+// using namespace std;
+// // function to add two numbers
+
+// int sum(int a, int b)
+// {
+//   int Sum=a+b;  
+//   return Sum;  // return the sum of a and b
+// }
+// int main()
+// {
+//   int num1 , num2;
+//   cout<<"Enter tyhe first number: ";
+//   cin>>num1;
+//   cout<<"Enter the second number: ";
+//   cin>>num2;
+
+//   int result = sum(num1, num2);  // call the function 
+//   cout<<"The sum of "<<num1<<" and "<<num2<<" is: "<<result<<endl;  
+
+//   return 0;
+// }
+
+
+// #include<iostream>
+// using namespace std;
+
+//   int minOfTwoNumbers(int a, int b)
+//   {
+//     return (a < b) ? a : b;  
+//   }
+// int main()
+// {
+//  int a, b;
+//  cout<<"enter the two numbers:\n";
+//  cout<<"enter the fisrt number: ";
+//  cin>>a;
+//   cout<<"enter the second number: ";
+//   cin>>b;
+//  int minNumber = minOfTwoNumbers(a, b);  
+//  cout<<"minimum number is ="<<minNumber<<endl;
+
+
+
+
+//  now by using the return we can return the value of minimum number from the function to the main function and then we can print it in the main function
+// int minOfTwoNumber(int a, int b)   //######## (int a, int b) is a5e the parameters
+// {
+//   if(a<b)
+//   {
+//     return a;
+//   }
+//   else{
+//     return b;
+//   }
+//   }
+
+// int main()
+// {
+//   int minNUmber = minOfTwoNumber(10,20);  //#########(10,20) is the argument passed to the function 
+//   cout<<"minimum number is: "<<minNUmber<<endl;
+// return 0;
+// }
+
+// Sum of numbers 1 to N using function
+
+// #include<iostream>
+// using namespace std;
+// int sumOfNumbers(int N)
+// {
+//   int sum =0;
+//   for(int i=1 ; i<=N; i++)
+//   {
+//     sum += i;
+//   }
+//   return sum;  //return the value of sum
+// }
+// int main()
+// {
+//   int N;
+//   cout<<"Enter the value of N:";
+//   cin>>N;
+//   int Sum = sumOfNumbers(N);
+//   cout<<"Sum of the N numbers are :"<<Sum<<endl;
+//   return 0;
+// }
+
+
+// #include<iostream>
+// using namespace std;
+// //factorial of N numbers using function 
+
+// int factorialN(int N)
+// {
+//   int fact =1;
+//   for(int i=1 ; i<=N ; i++)
+//   {
+//     fact*=i;
+//   }
+//   return fact;
+// }
+// int main()
+// {
+//   int N;
+//   cout<<"Enter the value of N :";
+//   cin>>N;
+//   int factorial = factorialN(N);
+//   cout<<" factorial of"<<N<<"is :"<<factorial<<endl;
+//   return 0;
+// }
+
+// //### pass by value in function   #########
+// #include<iostream>
+// using namespace std;
+// int sum(int a, int b)
+// {
+//   a=a+10;
+//   b=b+10;
+//   return a+b;
+// }
+//  int main()
+//  {
+//   int a=5 , b=10;
+//   cout<<sum(a,b)<<endl; // it gives the value of a and b as 25 because we are passing the value of a and b to the function and not the address of a and b
+//   cout<<a<<"\n"<<b<<endl;  // it gives the value of a and b as 5 and 10 because we are passing the value of a and b to the function and not the address of a and b
+//   return 0;
+//  }
+
+ 
+
+//##########  Sum of the digits of a number.   ###########
+
+
+// #include<iostream>
+// using namespace std;
+// int sumOfDigits(int num)
+// {
+//   int digitSum =0;
+//   while(num>0)
+//   {
+//     int lastDig = num%10; // get the last digit of the number
+//     num/=10; // remove the last digit from the number
+//     digitSum+= lastDig ; // add the last digit to the sum 
+//   }
+//   return digitSum;
+// }
+// int main()
+// {
+//   // int num;
+//   // cout<<"Enter the number :";
+//   // cin>>num; //### by taking input from the user ####
+//   // int Sum = sumOfDigits(num);
+//   // cout<<"sum of the digits of the number is :"<<Sum<<endl;
+//   cout<<"Sum :"<<sumOfDigits(2356)<<endl; // directly calling the function with a number or we can say that by passing the arguments
+//   return 0;
+// }
+
+
+//#######  Calculate nCr binomial coefficient for n & r using functions ######
+// #include<iostream>
+// using namespace std;
+// int factorial(int n){
+//  int fact = 1;
+//   for(int i=1 ; i<=n ; i++){
+//     fact *=i;
+//   }
+//   return fact;
+// }
+// int nCr(int n, int r)
+// {
+//   int fact_n =factorial(n);
+//   int fact_r =factorial(r);
+//   int fact_nmr = factorial(n-r);
+//   return fact_n / (fact_r * fact_nmr);  // nCr = n! / (r! * (n-r)!)
+// }
+
+// int main()
+// {
+//   int n,r;
+//   cout<<"Enter the value of n:";
+//   cin>>n;
+//   cout<<"Enter the value of r:";
+//   cin>>r;
+//   nCr(n,r);
+//   cout<<"nCr for "<<n<<" and "<<r<<" is :"<<nCr(n,r)<<endl;
+//   return 0;
+// }
