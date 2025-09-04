@@ -70,7 +70,7 @@
 //     float gpa=3.5;
 //     bool isstudent=true;
 
-//     cout<<age<<" "<<grade<<" "<<gpa<<" "<<isstudent<<" "<<endl; ##########it prints all the values in a single line##########
+//     cout<<age<<" "<<grade<<" "<<gpa<<" "<<isstudent<<" "<<endl;              #########it prints all the values in a single line##########
 //     cout<<"size of int="<<sizeof(int)<<endl;
 //     cout<<"size of char="<<sizeof(char)<<endl;
 //     cout<<"size of float="<<sizeof(float)<<endl;
@@ -82,7 +82,7 @@
 // int main()
 // {
 //     float PI1=3.1459265359;
-//     double PI2=3.1459265359; ############float and double are used to store decimal values##########
+//     double PI2=3.1459265359;                                                 ############float and double are used to store decimal values##########
 
 //     cout<<"PI="<<PI1<<endl;
 //     cout<<"PI2="<<PI2<<endl;
@@ -95,7 +95,7 @@
 //   int age=22;
 //   char grade='a';
 //   float PI=3.1459265359;
-//   bool ishello=false;       ##########bool is used to store true or false values##########
+//   bool ishello=false;                                                         ##########bool is used to store true or false values##########
 //   double marks=334.7;
 //   cout<<"marks="<<marks;
 //   cout<<"\n"<<ishello;
@@ -838,3 +838,102 @@
 //   cout<<"nCr for "<<n<<" and "<<r<<" is :"<<nCr(n,r)<<endl;
 //   return 0;
 // }
+
+
+//  ##########################################################  USE OF CLASS  ###################################################################
+
+
+// #include<iostream>
+// using namespace std;
+// class person
+// {
+//   char name[30];
+//   int age;
+//   public:
+//      void getdata(void);
+//      void display(void);
+// };
+
+// void person :: getdata(void)
+// {
+//   cout<<"Enter your name : ";
+//   cin>>name;
+//   cout<<"Enter your age : ";
+//   cin>>age;
+// }
+// void person :: display(void)
+// {
+//   cout<<"\n Name :"<<name;
+//   cout<<"\n Age :"<<age;
+// }
+
+// int main(){
+//   person p;
+//   p.getdata();
+//   p.display();
+//   return 0;
+// }
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//   int n=7,flag=0;
+//   for(int i=2;i<n;i++){
+//     if(!(n%i)){
+//       cout<<"not prime";
+//       flag=1;
+//       break;
+
+//     }
+//   }
+//   if(!flag)
+//   cout<<"prime";
+//   return 0;
+
+// }
+
+
+//##########################doubt##############################################
+// #include<iostream>
+// using namespace std;
+// int main(){
+//   int a[10]= {10,12,2,15,2,3,4,6,30,0};
+//   int n=10,max;
+//   max=a[0];
+//   for(int i=0;i<n;i++){
+//     if(a[i]>max){
+//       max=a[i];
+//       if(a[n-i]>max){
+//         max=a[n-i];
+//       }
+//   }
+// }
+//   return 0;
+// }
+
+//######################### maximum value in an array ##########################
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int a[10] = {10, 12, 2, 15, 2, 3, 4, 6, 30, 0};
+//     int n = 10, max;
+    
+//     max = a[0]; //####initialize max with the first element of the array
+    
+//     for (int i = 1; i < n; i++) {    // Start loop from index 1 since max is already initialized with a[0]
+//         if (a[i] > max) {   // Compare current element with max
+//             max = a[i]; // Update max if the current element is greater
+//         }
+//     }
+    
+//     cout << "Maximum value: " << max << endl;  
+//     return 0;
+// }
+
+
+#include<iostream>
+using namespace std;
+int main(){
+ 
+}
